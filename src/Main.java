@@ -21,9 +21,9 @@ public class Main {
             int i = 11;
             while (i > 1) {
                 i--;
-                System.out.print(+i + " ");
+                System.out.print(i + " ");
             }
-            System.out.println("");
+                System.out.println();
         }
         System.out.println("задача № 3");{
             int population = 12_000_000;
@@ -39,8 +39,8 @@ public class Main {
         System.out.println("задача № 4");{
             double contribution = 15000;
             double percent = 1.07;
-            int i = 0;
-            for (i = 1; contribution <= 120000; i++) {
+            int i = 1;
+            for (; contribution <= 120000; i++) {
                 contribution = contribution * percent;
                 System.out.println(" месяц " + i + " сумма накоплений равна " + contribution + " рублей");
             }
@@ -48,8 +48,8 @@ public class Main {
         System.out.println("задача № 5");{
             double contribution = 15000;
             double percent = 1.07;
-            int i = 0;
-            for (i = 1; contribution <= 120000; i++) {
+            int i = 1;
+            for (; contribution <= 120000; i++) {
                 contribution = contribution * percent;
                 if (i % 6 == 0) {
                     System.out.println(" месяц " + i + " сумма накоплений равна " + contribution + " рублей");
@@ -59,9 +59,8 @@ public class Main {
         System.out.println("задача № 6");{
             double contribution = 15000;
             double percent = 1.07;
-            int i = 0;
-
-            for (i = 1; i <= 108; i++) {
+            int i = 1;
+            for (; i <= 108; i++) {
                 contribution = contribution * percent;
                 if (i % 6 == 0) {
                     System.out.println(" месяц " + i + " сумма накоплений равна " + contribution + " рублей");
